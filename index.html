@@ -1,7 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham Tiwari's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            margin: 5px;
+        }
+
+        section {
+            background: #fff;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience li {
+            margin-bottom: 15px;
+        }
+
+        .experience ul li span {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .collapsible {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2rem;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            float: right;
+            font-weight: bold;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f9f9f9;
+        }
+
+        .content ul {
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Subham Tiwari</h1>
+        <p>+1-989-824-6308 | subham.tiwarius@gmail.com | <a href="https://github.com/subhamtiwari" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/subhamtiwari" target="_blank">LinkedIn</a> | United States</p>
+    </header>
+
+    <div class="container">
+        <section class="experience">
+            <h2>Technical Experience</h2>
+
+            <button type="button" class="collapsible">Generative AI Engineer | Central Michigan University – Clark Historical Library (08/22 – 04/24)</button>
+            <div class="content">
+                <ul>
+                    <li>Developed RAG system using Generative AI technologies, including LangChain, resulting in a 15% increase in information retrieval accuracy.</li>
+                    <li>Implemented Elasticsearch to perform similarity searches & validate responses, enhancing document relevance & accuracy of chatbot answers.</li>
+                    <li>Conducted comprehensive RAG evaluations using the RAGAS methodology, identifying & addressing model limitations to refine system performance.</li>
+                    <li>Applied basic retrieval techniques such as neural indexing, which led to a 25% reduction in query response time.</li>
+                    <li>Integrated Weights & Biases (W&B) for visibility & monitoring, ensuring real-time tracking & analysis of model performance.</li>
+                </ul>
+            </div>
+
+            <button type="button" class="collapsible">Senior Data Scientist | Chanel via Accenture (08/21 – 08/22)</button>
+            <div class="content">
+                <ul>
+                    <li>Developed churn prediction models using Random Forest and Gradient Boosting, reducing churn by 12% with 87% accuracy and an AUC of 0.92.</li>
+                    <li>Built a Collaborative Filtering cross-sell recommendation system, increasing average transaction value by 8% helping with customer insights.</li>
+                    <li>Designed and optimized ETL pipelines from MySQL to Azure Data Lake, Google BigQuery, and Reltio MDM, ensuring seamless data flow.</li>
+                    <li>Deployed models via AWS SageMaker and monitored performance using Power BI dashboards for real-time insights.</li>
+                </ul>
+            </div>
+
+            <button type="button" class="collapsible">Data Scientist | DuPont & FMC via Cognizant (03/18 – 08/21)</button>
+            <div class="content">
+                <ul>
+                    <li>Developed & implemented a predictive customer churn analysis system utilizing RFM analysis & a random forest algorithm, leading to a 15% increase in high-value customer retention with 78.8% accuracy.</li>
+                    <li>Engineered advanced data science solutions across healthcare, finance, and retail sectors, integrating machine learning models and statistical techniques to tackle complex business challenges, resulting in a 20% boost in operational efficiency.</li>
+                    <li>Designed and optimized data transformation & processing workflows, including complex DAX measures and Power Query transformations.</li>
+                </ul>
+            </div>
+
+            <button type="button" class="collapsible">Data Analyst | Livent - Cognizant (11/17 – 10/18)</button>
+            <div class="content">
+                <ul>
+                    <li>Analyzed, designed, & developed BI solutions using Power BI for complex sales data, contributing to increased efficiency & data decision making.</li>
+                    <li>Utilized SQL for data extraction & manipulation & applied statistical techniques for data analysis.</li>
+                    <li>Implemented BI solutions by addressing user questions & inquiries, monitoring performance metrics, & optimizing application functions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Central Michigan University</strong> – M.S. Information Science (08/22 – 06/24)</li>
+                <li><strong>GITAM University</strong> – B.Tech. Computer Science (07/12 – 05/16)</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Relevant Projects</h2>
+            <ul>
+                <li><strong>RAG System with Lang Chain for PDF files:</strong> Constructed a Retrieval-Augmented Generation (RAG) system for PDF retrieval, embeddings, and Large Language Model (LLM) connection.</li>
+                <li><strong>Flight Delays Visualization:</strong> Developed a dashboard to analyze flight delays, integrating data from Google Cloud, Spark SQL, and Apache Airflow for automated ETL processes.</li>
+                <li><strong>E-commerce Sentiment Dashboard:</strong> Built a model for sentiment analysis of customer reviews with 75% accuracy using NLP and Machine Learning.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Subham Tiwari | +1-989-824-6308 | <a href="mailto:subham.tiwarius@gmail.com">subham.tiwarius@gmail.com</a></p>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
